@@ -1,4 +1,5 @@
 package com.example.finalproject;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -46,8 +47,12 @@ public class MainActivity extends AppCompatActivity {
         Adappter adappter = new Adappter(ids,caption);
         recycler.setAdapter(adappter);
     }
+
+
     public void cardOnclick(View view){
+
         System.out.println("hiiiii");
+
         String Des="";
         String name="";
         int imgid =0;
@@ -64,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("id",imgid);
         intent.putExtra("name",name);
         startActivity(intent);
+
     }
 
     public void Load() {

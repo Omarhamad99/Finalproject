@@ -6,10 +6,11 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
+import com.example.finalproject.Location1;
 import com.example.finalproject.R;
 
 public class CarsDetails extends AppCompatActivity {
@@ -30,5 +31,10 @@ public class CarsDetails extends AppCompatActivity {
 
         txtName.setText(Name);
         txtDesc.setText(Descrip);
+    }
+
+    public void getlocation(View view) {
+        Intent intent = new Intent( this, Location1.class);
+        startActivity(intent);
     }
 }
